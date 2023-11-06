@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+  </head>
+  <body>
+    <h1>Новая страница </h1>
+
+
+  <table>
+    <tr>
+      <th>id</th>
+      <th>Date</th>
+      <th>Name</th>
+      <th>Phone</th>
+    </tr>
+  {% for obj in object_list %}
+    <tr>
+      <th>{{ obj.id }}</th>
+      <th>{{ obj.order_dt }}</th>
+      <th>{{ obj.order_name }}</th>
+      <th>{{ obj.order_phone }}</th>
+    </tr>
+  {% endfor %}
+  </body>
+</html> 
